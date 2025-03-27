@@ -7,16 +7,4 @@ function maximoNumero(arreglo: number[]): number {
     return maximo;
 }
 
-// Leer datos desde el usuario
-import * as readlineSync from "readline-sync";
-
-let n: number = parseInt(readlineSync.question("Ingrese el tamaño de la lista: "));
-
-let a: number[] = [];
-
-for (let i = 0; i < n; i++) {
-    let num = parseFloat(readlineSync.question(`Ingrese el número ${i + 1}: `));
-    a.push(num);
-}
-
-console.log("El número máximo es:", maximoNumero(a));
+console.log(maximoNumero([2, 3, 1, 0, 3,-1]));
